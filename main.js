@@ -1,19 +1,52 @@
-const progress = document.querySelector('.progress')
-const percentage = document.querySelector('.progress span')
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+  function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
 
-let per = 0;
-function progressLoad(){
-    if(per>=80){
-        progress.style.width = `80%`;
-        percentage.innerHTML = "80%"
 
-    }else{
-        progress.style.width = `${per}%`;
-        percentage.innerHTML = `${per}%`;
+  $('.slidering').slick({
+    centerMode: true,
+    centerPadding: '60px',
 
-    }
-    per++
+    
+    autoplay: true,
+    infinite: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          centerPadding: '40px',
+          slidesToShow: 1,
+          arrows: false
+        }
+      }
+    ]
+  });
 
+
+// Initi AOS
+function aos_init() {
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
 }
 
-setInterval(progressLoad,90)
+
+
+  
