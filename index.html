@@ -1,41 +1,316 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Walbreed Technologies</title>
+
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+
+    <!--slick slider-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
     <link rel="stylesheet" href="style.css">
-    <title>Walbytech Technologies</title>
-</head>
-<body>
-    <div class="background"></div>
+  </head>
+  <body>
     <div class="container">
-        <div class="top">
-            <hr>
-            <p>WALBYTECH</p>
-            <hr>
+      <!-- NAVIGATION 1-->
+        <section class="nav1">
+          <div class="contain">
+            <div class="mail">
+              <a href="mailto:info@walbytech.com"><i class="fa-solid fa-envelope"></i></i>     Email: info@active-renewables.com</a>
+              <p><i class="fa-solid fa-clock"></i> Hours: Mon-Fri: 9am - 5pm</p>
+            </div>
+            <div class="tel" ><a href="tel:08080944447" ><i class="fa-solid fa-phone"></i> 08080944447</a></div>
+          </div>
+          
+        </section>
+
+        <!-- NAVIGATION 
+      <section class="nav2">
+        <div class="contain">
+          <div> <a href="index.html"><img src="images/logo1.png" alt="Home Page"></a></div>
+          <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+              
+          </nav>
         </div>
-        <h1>UNDER CONSTRUCTION</h1>
-        <h3>PROGRESS</h3>
-        <div class="progress-wrapper">
-            <div class="progress"><span>0%</span></div>
+      </section> 2-->
+
+
+      <!--nav 3 -->
+   <div class="nav2">
+    <div class="nav3">
+      <nav >
+        <ul class="sidebar ">
+          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="products.html">Products</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  </ul>
+        </ul>
+        <ul>
+          <li><a href="index.html"><img src="images/logo1.png" alt=""></a></li>
+       
+          <li class="hideOnMobile"><a href="index.html">Home</a></li>
+          <li class="hideOnMobile"><a href="about.html">About</a></li>
+          <li class="hideOnMobile"><a href="services.html">Services</a></li>
+          <li class="hideOnMobile"><a href="products.html">Products</a></li>
+          <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+          </ul>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+     </div>
+   </div>
+
+
+      <!-- showcase 1-->
+      <section class="showcase width">
+        <span>Welcome...</span>
+
+        <h1>Ensuring Uninterrupted Power for Every Sector</h1>
+
+        <p>We provide Seamless and Reliable Energy Solutions to Keep Your Operations Running Smoothly and Efficiently</p>
+
+        <div class="btn">
+          <a href="contact.html" class="green">Get a Quote ></a>
+
+          <a href="about.html"  class="white">Learn More ></a>
+        </div>
+      </section>
+
+
+      <!--advantage-->
+      <section class="advantage ">
+        <h2>Why Choose Us?</h2>
+        <div class="flex1">
+          <div class="flex2">
+            <span > <i class="fa-solid fa-solar-panel" style="font-size:24px;color:#08441D;"></i></span>
+            <h4>20+ Years of Expertise in High-Quality Solutions and Service</h4>
+
+            <p>We ensure high-quality service, while a dedicated logistics partner facilitates prompt shipping and delivery, minimizing equipment downtime.</p>
+          </div>
+
+          <div class="flex2">
+            <span><i class="fa-solid fa-industry" style="font-size:24px;color:#08441D;"></i> </span>
+            <h4>Competitive Pricing and Efficient Order Expediting</h4>
+
+            <p>Walbreed offers the best prices without intermediary costs and prioritizes expediting client orders, ensuring timely delivery and reduced downtime.</p>
+          </div>
+
+        
+          <div class="flex2">
+            <span> <i class="fa-solid fa-handshake" style="font-size:24px;color:#08441D;"></i></span>
+            <h4>Partnership with Leading OEMs for Advanced Power Solutions</h4>
+
+            <p>Collaborations with industry leaders like Makelsan, Schneider-Electric, Eaton, and Fuji-Electric allow Walbreed to offer top-tier power solutions for building and data center applications</p>
+          </div>
         </div>
 
-        <div class="call">
-            <p>For more information, send a mail to <strong>info@walbytech.com</strong>  </p>
+      </section>
+
+
+      <!--solutions-->
+      <section class="solutions">
+        <div><h2>Our Unique Solutions</h2>
+          <p style="text-align: center;">Tailored Power for a Sustainable Future</p></div>
+        <div class="flex3">
+          <div class="flex4">
+            <img src="images/data.png" alt="">
+            <div class="div">
+              <h4>Data and Technical Infrastructure Solutions</h4>
+              <p>
+                We deliver advanced power solutions for data centers, technical spaces, control rooms, and switchboard rooms, ensuring seamless and efficient operations.
+              </p>
+
+              <a href="products.html">View Related Products ></a>
+            </div>
+          </div>
+          
+        </div>
+        <div class="flex3">
+          <div class="flex41 flex4 ">
+           
+            <div class="div">
+              <h4>Commercial and Civil Power Solutions</h4>
+              <p>
+                Our solutions support the power needs of offices, civil constructions, retail spaces, and hotels, providing reliable and efficient energy for diverse commercial activities.
+              </p>
+              <a href="products.html" >View Related Products ></a>
+            </div>
+
+            <img src="images/commercial.png" alt="commercial buildings">
+          </div>
+          
+        </div>
+        <div class="flex3">
+          <div class="flex4">
+            <img src="images/health.png" alt="health equipment">
+            <div class="div">
+              <h4>Healthcare and Marine Power Solutions</h4>
+              <p>
+                We offer specialized power solutions for healthcare facilities and marine applications, ensuring safety, reliability, and sustainability in demanding environments.
+              </p>
+
+              <a href="products.html">View Related Products ></a>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!--products-->
+      <section class="products">
+        <div class="h">
+          <h2  style="text-align: center;">Our Product Category</h2>
+            <p style="text-align: center;">"Powering Innovation with Unmatched Reliability"</p> </div>
+
+
+
+            <div class="slidering">
+              <div><img src="images/smartUps.png" alt=""> 
+                <p style="font-weight: 600;"> Smart UPS 10 -  40kva</p>
+              </div>
+              <div><img src="images/kstar.png" alt="">  
+                <p style="font-weight: 600;"> UID 10 - 120kva UPS KStar</p></div>
+              <div><img src="images/galaxyups.png" alt=""><p style="font-weight: 600;">
+                MGE Galaxy 7000 500 kVA
+              </p></div>
+              <div><img src="images/officeE.png" alt=""><p style="font-weight: 600;">Office Offer- Performa: cable trays for indoor</p></div>
+            </div>
+
+            <div><a href="products.html" style="text-align: center; margin-top: 64px;">view all products ></a></div>
+      </section>
+
+       <!--cta 1-->
+       <section class="cta">
+          <div class="ctaC">
+            <div class="cta1">
+              <h2>Ready to optimize your power needs?</h2>
+              <p>Discover the perfect power solution tailored to your unique needs. Our expert team will evaluate your requirements and deliver a customized quote that guarantees efficiency, reliability, and sustainability. Contact us today to learn how we can power your future with our advanced energy solutions. <br> <br>
+    
+                Have questions? <a href="mailto:info@walbytech.com" style="color: #F4A548;">Talk to one of our experts</a> </p>
+            </div>
+            <div class="form">
+              <form action="">
+                <form action='POST' method='post'><input type='hidden' name='form-name' value='form 1' />
+                  <span class="fone">
+                      <input type="text" name="text" id="name" placeholder="Full Name" required>
+                  <input type="email" name="email" id="email1" placeholder="Email" required>
+                  </span>
+                  <span class="fone">  
+                      <input type="tel" name="tel" id="tel" placeholder="Phone Number">
+                      <input type="text" name="Message" id="Subject" placeholder="Write message">
+                  </span>
+                  <input type="submit">
+                </input>
+              </form>
+            </div>
+          </div>
+        
+       </section>
+
+
+       <!--customonial-->
+
+       <div class="section testimonial">
+        <div class="infom">
+          <h2>What Our Customers Say?</h2>
+        </div>
+        <div class="div3">
+          <div class="bd"><p>Walbreed Technologies provided our data center with a seamless UPS system that has ensured uninterrupted operations, even during power outages. Their expertise and reliability are unmatched." <br><br>
+            <span style="color: #F4A548;">John Olufemi, IT Director</span></p>
+          </div>
+       
+        
+        
+        <div class="bd dd">
+          <p>
+            We entrusted Walbreed Technologies with our office power management, and they delivered a tailored solution that improved efficiency and reduced costs. Their team's professionalism and attention to detail were impressive." <br><br>
+ <span style="color: #F4A548; font-weight: 600;">  Sarah Johnson, Operations Manager</span>
+          </p>
+        </div>
+        
+          <div class="bd">
+            <p>As a healthcare facility, reliability is paramount. Walbreed Technologies designed and implemented a power solution that has been flawless, allowing us to focus on patient care without interruption." <br> <br>
+              <span style="color: #F4A548;">Dr. Emily Chang, Chief Medical Officer</span></p>
+          </div>
+
+        </div>
+       </div>
+
+       <!--footer-->
+      <section class="footer">
+        <footer>
+          <div class=""><a href=""><img src="images/logo1.png" alt="walbytech.com"></a>
+          <p>Walbreed Technologies Limited is a wholly indigenous company that majors in the supply of IT Power Infrastructure & Power Management solutions to diverse sectors of the economy</p>
+        </div>
+        <div class="">
+          <h4>QUICK LINKS</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
 
+        <div>
+          <h4>CONTACT</h4>
+          <p style="max-width: 183px;">Walbreed Technologies Limited 43B, Pipeline Road,Off Governor’s Avenue Lagos - Nigeria</p>
+        </div>
+        </footer>
+      </section>
 
-    <!-- <div class="social-icons">
-        <a href="#your-fb-page"><i class="fab fa-facebook"></i></a>
-        <a href="#your-twitter-profile"><i class="fab fa-twitter"></i></a>
-        <a href="#your-linkedin-page"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#your-instagram-page"><i class="fab fa-instagram"></i></a>
-        <a href="#your-youtube-page"><i class="fab fa-youtube"></i></a>
-        <a href="#rss"><i class="fas fa-rss"></i></a>
+ <!--copyright-->
 
-    </div> -->
+ <section class="copyright">
+  <p>Copyright © 2022  Walbreed Technology Co., Ltd. All rights reserved.</p>
+</section>
+
+
+      </div>
+    
+      
+
+     
+       
+
+      
     </div>
-    <script src="main.js"></script>
-</body>
+
+    <!--Slick slider jsn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+
+    <!-- my js file -->
+    <script src="./main.js"></script>
+
+   <!--aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
 </html>
